@@ -1,0 +1,110 @@
+html, body, p, li, ul, h1{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar{
+  width: 12%;
+  height: 100vh;
+  background-color: #9c9c9c;
+  color: white;
+  float: left;
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #2b2b2b;
+  margin-left: 50px;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.comparisonli{
+  list-style-type: none;
+  font-size: 23px;
+  margin-left: 25px;
+  margin-top: 102px;
+  font-family: avenir;
+}
+
+.homeli{
+  list-style-type: none;
+  font-size: 23px;
+  margin-left: 50px;
+  margin-top: 102px;
+  font-family: avenir;
+}
+
+.timelineli{
+  list-style-type: none;
+  font-size: 23px;
+  margin-left: 40px;
+  margin-top: 102px;
+  font-family: avenir;
+}
+
+.statOne{
+  width: 190px;
+  height: 58px;
+  margin-left: 96px;
+  margin-top: 51px;
+  background-color: #c4c4c4;
+  float: left;
+}
+
+.statTwo{
+  width: 190px;
+  height: 58px;
+  margin-left: 116px;
+  margin-top: 51px;
+  background-color: #c4c4c4;
+  float: left;
+}
+
+.statThree{
+  width: 190px;
+  height: 58px;
+  margin-left: 116px;
+  margin-top: 51px;
+  background-color: #c4c4c4;
+  float: left;
+}
+
+.statFour{
+  width: 190px;
+  height: 58px;
+  margin-left: 116px;
+  margin-top: 51px;
+  background-color: #c4c4c4;
+  float: left;
+}
+
+.type{
+  text-align: center;
+  line-height: 60px;
+  font-family: Avenir;
+}
+
+.score{
+  text-align: center;
+  line-height: 60px;
+  font-family: Avenir;
+}
+
+.year{
+  text-align: center;
+  line-height: 60px;
+  font-family: Avenir;
+}
+
+.season{
+  text-align: center;
+  line-height: 60px;
+  font-family: Avenir;
+}
