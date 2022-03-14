@@ -49,11 +49,21 @@ a {
   font-family: avenir;
 }
 
+.stat-container{
+  width: 1270px;
+  height: 102px;
+  margin-top: -750px;
+  margin-left: 170px;
+  background-color: grey;
+  float: left;
+}
+
 .statOne{
   width: 190px;
   height: 58px;
   margin-left: 96px;
-  margin-top: 51px;
+  margin-top: 25px;
+  border-radius: 50px;
   background-color: #c4c4c4;
   float: left;
 }
@@ -62,7 +72,8 @@ a {
   width: 190px;
   height: 58px;
   margin-left: 116px;
-  margin-top: 51px;
+  margin-top: 25px;
+  border-radius: 50px;
   background-color: #c4c4c4;
   float: left;
 }
@@ -71,7 +82,8 @@ a {
   width: 190px;
   height: 58px;
   margin-left: 116px;
-  margin-top: 51px;
+  margin-top: 25px;
+  border-radius: 50px;
   background-color: #c4c4c4;
   float: left;
 }
@@ -80,7 +92,8 @@ a {
   width: 190px;
   height: 58px;
   margin-left: 116px;
-  margin-top: 51px;
+  margin-top: 25px;
+  border-radius: 50px;
   background-color: #c4c4c4;
   float: left;
 }
@@ -107,4 +120,21 @@ a {
   text-align: center;
   line-height: 60px;
   font-family: Avenir;
+}
+
+.mainInfo-container{
+  width: 1270px;
+  height: 420px;
+  margin-top: -580px;
+  margin-left: 170px;
+  float: left;
+  background-color: green;
+}
+
+.poster{
+  width: 305px;
+  height: 420px;
+  margin-left: 20px;
+  float: left;
+  background-color: grey;
 }
