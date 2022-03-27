@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 html, body, p, li, ul, h1{
   margin: 0;
   padding: 0;
@@ -15,7 +17,10 @@ html, body, p, li, ul, h1{
   width: 81px;
   height: 81px;
   border-radius: 50px;
-  background-image: url("../Logo.svg");
+  background-image: url("../Logo\ 2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-left: 45px;
   margin-top: 15px;
   float: left;
@@ -71,7 +76,6 @@ a:hover{
   height: 102px;
   margin-top: -750px;
   margin-left: 170px;
-  background-color: grey;
   float: left;
 }
 
@@ -81,6 +85,7 @@ a:hover{
   margin-left: 96px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #A4B0BE;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -92,6 +97,7 @@ a:hover{
   margin-left: 96px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #CED6E0;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -103,6 +109,7 @@ a:hover{
   margin-left: 116px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #A4B0BE;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -114,6 +121,7 @@ a:hover{
   margin-left: 116px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #CED6E0;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -125,6 +133,7 @@ a:hover{
   margin-left: 116px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #A4B0BE;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -136,6 +145,7 @@ a:hover{
   margin-left: 116px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #CED6E0;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -147,6 +157,7 @@ a:hover{
   margin-left: 116px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #A4B0BE;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -158,6 +169,7 @@ a:hover{
   margin-left: 116px;
   margin-top: 25px;
   border-radius: 50px;
+  color:#FF4757;
   background-color: #CED6E0;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   float: left;
@@ -215,6 +227,7 @@ a:hover{
   height: 70px;
   float: left;
   margin-left: 50px;
+  font-family: Avenir;
   background-color: rgb(175, 175, 175);
 }
 
@@ -224,5 +237,8 @@ a:hover{
   float: left;
   margin-top: 20px;
   margin-left: 50px;
+  font-size: ;
+  color: #CED6E0;
+  font-family: 'Nunito';
   background-color: rgb(175, 175, 175);
 }
