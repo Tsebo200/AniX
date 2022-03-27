@@ -9,6 +9,7 @@ function App() {
       < MainInfo />
       <Routes>
         <Route path="/index" element={ <Stats />}/>
+        <Route path="/index" element={ <MainInfo />}/>
       </Routes>
     </div>
   );

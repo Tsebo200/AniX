@@ -8,10 +8,12 @@ axios.get("https://api.jikan.moe/v4/anime/20")
 });
 const MainInfo =()=>{
     return(
-        <div className='mainInfo-container'>
+        <div className='main-container'>
+            <div className='mainInfo-container'>
             <div className="poster"></div>
             <div className="title"></div>
             <div className="synopsis"></div>
+            </div>
         </div>
     );
 }
