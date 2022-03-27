@@ -30,7 +30,7 @@ html, body, p, li, ul, h1{
   width: 81px;
   height: 81px;
   border-radius: 50px;
-  background-image: url("../Hover\ Logo.svg");
+  background-image: url("../Hover\ Logo.png");
   margin-left: 45px;
   margin-top: 15px;
   float: left;
@@ -211,7 +211,6 @@ a:hover{
   margin-top: -580px;
   margin-left: 170px;
   float: left;
-  background-color: green;
 }
 
 .poster{
@@ -226,9 +225,10 @@ a:hover{
   width: 800px;
   height: 70px;
   float: left;
+  font-size: 31px;
   margin-left: 50px;
   font-family: Avenir;
-  background-color: rgb(175, 175, 175);
+  color: #CED6E0;
 }
 
 .synopsis{
@@ -237,8 +237,7 @@ a:hover{
   float: left;
   margin-top: 20px;
   margin-left: 50px;
-  font-size: ;
+  font-size: 17px;
   color: #CED6E0;
   font-family: 'Nunito';
-  background-color: rgb(175, 175, 175);
 }
