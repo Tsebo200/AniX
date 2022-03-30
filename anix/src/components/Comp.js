@@ -15,9 +15,10 @@ const Comp = ()=>{
         <>
         <div className="main-container">
         <div className="componentInterior">
+            <h1 className='table-heading'>Users Favourites</h1>
         <Bar 
             data={{
-                labels: ['One', 'Two', 'Three', 'Four', 'Five', 'Six'],
+                labels: ['Naruto', 'One Piece', 'Cowboy Bebop', 'Trigun', 'Bouken Ou Beet', 'Initial D'],
                 datasets: [{
                     label: '# of Votes',
                     data: [12, 19, 3, 5, 2, 3],

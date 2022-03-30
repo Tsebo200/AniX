@@ -3,6 +3,7 @@ import Stats from "./components/Stats";
 import MainInfo from "./components/MainInfo";
 import {Routes, Route} from 'react-router-dom';
 import Comp from "./components/Comp";
+
 function App() {
   return (
     <div className="App">
