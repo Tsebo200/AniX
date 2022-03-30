@@ -3,7 +3,7 @@ import Stats from "./components/Stats";
 import MainInfo from "./components/MainInfo";
 import {Routes, Route} from 'react-router-dom';
 import Comp from "./components/Comp";
-
+import Time from "./components/Time";
 function App() {
   return (
     <div className="App">
@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <> <Stats /> <MainInfo /> </>}/>
         <Route path="/compare" element={<Comp/>}/>
+        <Route path="/timeline" element={<Time/>}/>
       </Routes>
     </div>
   );

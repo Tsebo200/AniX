@@ -10,6 +10,7 @@ axios.get("https://api.jikan.moe/v4/anime")
 })
 
 const Comp = ()=>{
+    
     return(
         
         <>
@@ -20,7 +21,7 @@ const Comp = ()=>{
             data={{
                 labels: ['Naruto', 'One Piece', 'Cowboy Bebop', 'Trigun', 'Bouken Ou Beet', 'Initial D'],
                 datasets: [{
-                    label: '# of Votes',
+                    label: '# of Favourites',
                     data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: [
                         '#CED6E0',
