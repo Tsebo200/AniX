@@ -241,3 +241,18 @@ a:hover{
   color: #CED6E0;
   font-family: 'Nunito';
 }
+
+.componentInterior{
+  width: 640px;
+  height: 40vh;
+  background-color: #F7f7f7;
+  margin-top: 350px;
+  margin-left: 250px;
+  padding: 1%;
+  float: left;
+}
+
+canvas{
+  background-color: #2F3542;
+  color: #ffa502;
+}

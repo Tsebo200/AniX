@@ -1,16 +1,23 @@
 import React from 'react';
 import axios from 'axios';
+// import objectCount from './Stats';
+// import randomSelection from './Stats';
+
 axios.get("https://api.jikan.moe/v4/anime")
 .then((res)=>{
-    let setImage = res.data.data[0].images.jpg.image_url;
-    let setTitle = res.data.data[0].title;
-    let setSynopsis = res.data.data[0].synopsis;
+    const objectCount = res.data.data.length;
+    const randomSelection = Math.floor(Math.random() * objectCount);
+    console.log(objectCount);
+    let setImage = res.data.data[randomSelection].images.jpg.image_url;
+    let setTitle = res.data.data[randomSelection].title;
+    let setSynopsis = res.data.data[randomSelection].synopsis;
     document.getElementById("Poster").value = setImage;
     document.getElementById("titleText").textContent = setTitle;
     document.getElementById("synopsisText").textContent = setSynopsis;
+    console.log(randomSelection);
 })
-
 const MainInfo =()=>{
+
     return(
         <div className='main-container'>
             <div className='mainInfo-container'>

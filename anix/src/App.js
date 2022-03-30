@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        <Route path="/index" element={ <> <Stats /> <MainInfo /> </>}/>
+        <Route path="/" element={ <> <Stats /> <MainInfo /> </>}/>
         <Route path="/compare" element={<Comp/>}/>
       </Routes>
     </div>

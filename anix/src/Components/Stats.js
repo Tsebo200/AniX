@@ -6,10 +6,13 @@ const Stats = () => {
 
     axios.get("https://api.jikan.moe/v4/anime")
     .then((res) =>{
-        let setType = res.data.data[0].type;
-        let setScore = res.data.data[0].score;
-        let setYear = res.data.data[0].year;
-        let setSeason = res.data.data[0].season;
+        const objectCount = res.data.data.length;
+        const randomSelection = Math.floor(Math.random() * objectCount);
+        
+        let setType = res.data.data[randomSelection].type;
+        let setScore = res.data.data[randomSelection].score;
+        let setYear = res.data.data[randomSelection].year;
+        let setSeason = res.data.data[randomSelection].season;
         console.log(setType);
         console.log("hi");
         document.getElementById("typeBtn").textContent = setType;
@@ -17,10 +20,13 @@ const Stats = () => {
         document.getElementById("yearBtn").textContent = setYear;
         document.getElementById("seasonBtn").textContent = setSeason;
 
-        // let objectCount = res.data.length;
-        // var randomNumber = Math.floor(Math.random() * objectCount);
-        // console.log(randomNumber);
+        
+        console.log(randomSelection);
     });
+
+// const Stats=(props)=>{
+    // let objectCount = res.data.data.length;
+    // let randomSelection = Math.floor(Math.random() * objectCount);
 
     return(
         <>
@@ -32,6 +38,7 @@ const Stats = () => {
         </div>
         </>
     );
+// }
 }
 
-export default Stats;
+export default Stats
