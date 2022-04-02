@@ -15,29 +15,33 @@ const Comp = ()=>{
         
         <>
         <div className="main-container">
+        <div className='dropdown'>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a className="dropdown-item" href="/compare">Action</a></li>
+    <li><a className="dropdown-item" href="/compare">Another action</a></li>
+    <li><a className="dropdown-item" href="/compare">Something else here</a></li>
+  </ul>
+</div>
         <div className="componentInterior">
             <h1 className='table-heading'>Users Favourites</h1>
         <Bar 
             data={{
-                labels: ['Naruto', 'One Piece', 'Cowboy Bebop', 'Trigun', 'Bouken Ou Beet', 'Initial D'],
+                labels: ['Naruto', 'One Piece'],
                 datasets: [{
                     label: '# of Favourites',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [12, 19],
                     backgroundColor: [
                         '#CED6E0',
                         '#FF4757',
                         '#A4B0BE',
                         '#FF6B81',
                         '#7D8897',
-                        '#FFA1A9'
+                        '#FFA1A9',
                     ],
                     borderColor: [
-                        '#A4B0BE',
-                        '#FF2639',
-                        '#FF6B81',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
                     ],
                     Color:[
                         "#ffa502"
