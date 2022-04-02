@@ -243,14 +243,14 @@ a:hover{
   font-family: 'Nunito';
 }
 
-.componentInterior{
-  width: 640px;
-  height: 40vh;
+.barGraph{
+  width: 300px;
+  height: 30vh;
   background-color: #F7f7f7;
   margin-top: 350px;
-  margin-left: 250px;
-  padding: 1%;
-  padding-bottom: 3%;
+  margin-left: 60px;
+  padding: 0.5%;
+  padding-bottom: 2.1%;
   float: left;
 }
 .table-heading{
@@ -260,4 +260,68 @@ a:hover{
 canvas{
   background-color: #2F3542;
   color: #ffa502;
+}
+
+select{
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  color: #FF4757;
+  text-align: center;
+  background-color: #CED6E0;
+}
+
+.compare-heading{
+  text-align: center;
+  color: #CED6E0;
+}
+
+.dropdown-one{
+  margin-left: 400px;
+  margin-top: 30px;
+}
+
+h2{
+ text-align: center;
+ margin-top: -90px;
+ color: #FF4757;
+}
+
+.dropdown-two{
+  margin-left: 900px;
+  margin-top: -50px;
+  float: left;
+}
+
+.compare-btn{
+  width: 100px;
+  height: 30px;
+  margin-left: 356px;
+  margin-top: 30px;
+  border-radius: 50px;
+  border: none;
+  color: #FF4757;
+  text-align: center;
+  background-color: #A4B0BE;
+}
+
+.doughnutGraph-one{
+  width: 250px;
+  background-color: #F7f7f7;
+  margin-top: 50px;
+  margin-left: 160px;
+  padding: 0.2%;
+  padding-top: 0.4%;
+  float: left;
+}
+
+.doughnutGraph-two{
+  width: 250px;
+  background-color: #F7f7f7;
+  margin-top: -280px;
+  margin-left: 700px;
+  padding: 0.8%;
+  padding-top: 1%;
+  float: left;
 }
