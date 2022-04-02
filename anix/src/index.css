@@ -246,11 +246,12 @@ a:hover{
 .barGraph{
   width: 300px;
   height: 30vh;
-  background-color: #F7f7f7;
+  color: #2F3542;
+  background-color: #c3d3e6;
   margin-top: 350px;
   margin-left: 60px;
-  padding: 0.5%;
-  padding-bottom: 2.1%;
+  padding-top: 0.1%;
+  
   float: left;
 }
 .table-heading{
@@ -308,20 +309,52 @@ h2{
 
 .doughnutGraph-one{
   width: 250px;
-  background-color: #F7f7f7;
+  color: #2F3542;
+  background-color: #c3d3e6;
   margin-top: 50px;
   margin-left: 160px;
-  padding: 0.2%;
-  padding-top: 0.4%;
+  padding-top: 0.1%;
   float: left;
 }
 
 .doughnutGraph-two{
   width: 250px;
-  background-color: #F7f7f7;
+  color: #2F3542;
+  background-color: #c3d3e6;
   margin-top: -280px;
   margin-left: 700px;
-  padding: 0.8%;
   padding-top: 1%;
+  float: left;
+}
+
+
+.pieGraph-one{
+  width: 250px;
+  height: 100px;
+  color: #2F3542;
+  background-color: #c3d3e6;
+  margin-top: 370px;
+  margin-left: -250px;
+  padding-top: 1%;
+  float: left;
+}
+
+.pieGraph-two{
+  width: 250px;
+  height: 100px;
+  color: #2F3542;
+  background-color: #c3d3e6;
+  margin-top: -220px;
+  margin-left: 850px;
+  padding-top: 1%;
+  float: left;
+}
+
+.linegraph{
+  width: 550px;
+  color: #2F3542;
+  background-color: #c3d3e6;
+  margin-left: 100px;
+  padding-top: 4%;
   float: left;
 }
