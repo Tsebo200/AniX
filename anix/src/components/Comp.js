@@ -9,27 +9,38 @@ import {useState, useRef, useEffect} from 'react';
 
 const Comp = () => {
     const [animeList, setAnimeList] = useState([]);
-    // I just changed animeNames to animeList because it gives it more context to what is actually stored in animeList.
-    useEffect(()=>{ //I am putting the get request in a useEffect so that it gets all the animes when the page renders
+    // const [animeListTwo, setAnimeListTwo] = useState([]);
+    
+    useEffect(()=>{ 
         axios.get("https://api.jikan.moe/v4/anime")
         .then((res) => {
             let data = res.data.data;
-            // I changed name to data
             setAnimeList(data);
+            // setAnimeListTwo(data);
             console.log(data);
     });
 }, []);
 
 
-const selectedAnime = useRef(); //The selected anime id will be stored in this variable
+const selectedAnime = useRef(); 
+// const selectedAnimeTwo = useRef(); 
 const [animeNameOne, setAnimeNameOne] = useState([]);
 const [userWatchingOne, setUserWatchingOne] = useState([]);
 const [userCompletedOne, setUserCompletedOne] = useState([]);
-const [userDroppedOne, setuserDroppedOne] = useState([]);
+const [userDroppedOne, setUserDroppedOne] = useState([]);
 const[userPlannedToWatchOne, setUserPlannedToWatchOne] = useState([]);
-const outputChosenAnime = () => { // This is a function that will output the name of the Anime the user has chosen
+
+const [userWatchingTwo, setUserWatchingTwo] = useState([]);
+const [userCompletedTwo, setUserCompletedTwo] = useState([]);
+const [userDroppedTwo, setUserDroppedTwo] = useState([]);
+const[userPlannedToWatchTwo, setUserPlannedToWatchTwo] = useState([]);
+const outputChosenAnime = () => { 
     let animeId = selectedAnime.current.value;
     let chosenAnimeName = animeList.filter(item => item.mal_id == animeId);
+
+    // const outputChosenAnimeTwo = () => { 
+    //     let animeId = selectedAnimeTwo.current.value;
+    //     let chosenAnimeName = animeListTwo.filter(item => item.mal_id == animeId);
     
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id+"/statistics")
     .then((res)=>{
@@ -40,13 +51,23 @@ const outputChosenAnime = () => { // This is a function that will output the nam
         let completedOne = data.completed;
         setUserCompletedOne(completedOne);
         let droppedOne = data.dropped;
-        setuserDroppedOne(droppedOne);
+        setUserDroppedOne(droppedOne);
         let plannedOne = data.plan_to_watch;
         setUserPlannedToWatchOne(plannedOne);
 
+        let watchingTwo = data.watching;
+        setUserWatchingTwo(watchingTwo);
+        let completedTwo = data.completed;
+        setUserCompletedTwo(completedTwo);
+        let droppedTwo = data.dropped;
+        setUserDroppedTwo(droppedTwo);
+        let plannedTwo = data.plan_to_watch;
+        setUserPlannedToWatchTwo(plannedTwo);
+
     });
     setAnimeNameOne(chosenAnimeName);
-    document.getElementById("animeName").textContent = chosenAnimeName[0].title;
+    document.getElementById("animeNameOne").textContent = chosenAnimeName[0].title;
+    // document.getElementById("animeNameTwo").textContent = chosenAnimeName[0].title;
     console.log(chosenAnimeName);
 }
 return (
@@ -71,7 +92,7 @@ return (
         <h2 className="vs">vs</h2>
         <div className="dropdown-two">
           <form>
-            <select name="Animes">
+            <select name="Animes" onChange={outputChosenAnime} ref={selectedAnime}>
             {
                 animeList.map((item, index) => <option key={index} value={item.mal_id} >{item.title}</option>)
             }
@@ -80,7 +101,7 @@ return (
         </div>
 
         <div className="doughnutGraph-one">
-          <h1 className="table-heading" id="animeName">Anime Name</h1>
+          <h1 className="table-heading" id="animeNameOne">Anime Name</h1>
           <Doughnut
             data={{
               labels: ["Watching", "Completed", "Dropped", "Plan To Watch"],
@@ -104,7 +125,7 @@ return (
                 datasets: [
                   {
                     label: "# of Votes",
-                    data: [12, 19, 15, 18],
+                    data: [userWatchingTwo, userCompletedTwo, userDroppedTwo, userPlannedToWatchTwo],
                     backgroundColor: [
                       "#CED6E0",
                       "#FF4757",
@@ -211,4 +232,4 @@ return (
   );
 };
 
-export default Comp;
+export default Comp 
