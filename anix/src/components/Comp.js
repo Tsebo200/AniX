@@ -55,14 +55,14 @@ const outputChosenAnime = () => {
         let plannedOne = data.plan_to_watch;
         setUserPlannedToWatchOne(plannedOne);
 
-        let watchingTwo = data.watching;
-        setUserWatchingTwo(watchingTwo);
-        let completedTwo = data.completed;
-        setUserCompletedTwo(completedTwo);
-        let droppedTwo = data.dropped;
-        setUserDroppedTwo(droppedTwo);
-        let plannedTwo = data.plan_to_watch;
-        setUserPlannedToWatchTwo(plannedTwo);
+        // let watchingTwo = data.watching;
+        // setUserWatchingTwo(watchingTwo);
+        // let completedTwo = data.completed;
+        // setUserCompletedTwo(completedTwo);
+        // let droppedTwo = data.dropped;
+        // setUserDroppedTwo(droppedTwo);
+        // let plannedTwo = data.plan_to_watch;
+        // setUserPlannedToWatchTwo(plannedTwo);
 
     });
     setAnimeNameOne(chosenAnimeName);
@@ -92,7 +92,7 @@ return (
         <h2 className="vs">vs</h2>
         <div className="dropdown-two">
           <form>
-            <select name="Animes" onChange={outputChosenAnime} ref={selectedAnime}>
+            <select name="Animes">
             {
                 animeList.map((item, index) => <option key={index} value={item.mal_id} >{item.title}</option>)
             }
