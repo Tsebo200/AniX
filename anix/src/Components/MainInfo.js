@@ -10,7 +10,7 @@ axios.get("https://api.jikan.moe/v4/anime")
     let setImage = res.data.data[randomSelection].images.jpg.image_url;
     let setTitle = res.data.data[randomSelection].title;
     let setSynopsis = res.data.data[randomSelection].synopsis;
-    document.getElementById("Poster").value = setImage;
+    // document.getElementById("Poster").value = setImage;
     document.getElementById("titleText").textContent = setTitle;
     document.getElementById("synopsisText").textContent = setSynopsis;
     console.log(randomSelection);
