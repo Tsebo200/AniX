@@ -248,10 +248,9 @@ a:hover{
   height: 30vh;
   color: #2F3542;
   background-color: #c3d3e6;
-  margin-top: 350px;
-  margin-left: 60px;
+  margin-top: 360px;
+  margin-left: 70px;
   padding-top: 0.1%;
-  
   float: left;
 }
 .table-heading{
@@ -302,9 +301,8 @@ h2{
   margin-top: 30px;
   border-radius: 50px;
   border: none;
-  color: #FF4757;
   text-align: center;
-  background-color: #A4B0BE;
+  background-color: transparent;
 }
 
 .doughnutGraph-one{
@@ -333,9 +331,9 @@ h2{
   height: 100px;
   color: #2F3542;
   background-color: #c3d3e6;
-  margin-top: 370px;
+  margin-top: 360px;
   margin-left: -250px;
-  padding-top: 1%;
+  padding-top: 0.2%;
   float: left;
 }
 
@@ -344,9 +342,9 @@ h2{
   height: 100px;
   color: #2F3542;
   background-color: #c3d3e6;
-  margin-top: -220px;
+  margin-top: -240px;
   margin-left: 850px;
-  padding-top: 1%;
+  padding-top: 0.2%;
   float: left;
 }
 
