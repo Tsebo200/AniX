@@ -7,14 +7,12 @@ import {useState, useRef, useEffect} from 'react';
 
 const Comp = () => {
     const [animeList, setAnimeList] = useState([]);
-    // const [animeListTwo, setAnimeListTwo] = useState([]);
     
     useEffect(()=>{ 
         axios.get("https://api.jikan.moe/v4/anime")
         .then((res) => {
             let data = res.data.data;
             setAnimeList(data);
-            // setAnimeListTwo(data);
             console.log(data);
     });
 }, []);
@@ -111,6 +109,7 @@ return (
           </form>
         </div>
 
+        <div className="doughnutGraph-container">
         <div className="doughnutGraph-one">
           <h1 className="table-heading" id="animeNameOne">Anime Name</h1>
           <Doughnut
@@ -150,6 +149,7 @@ return (
               }}
             />
           </div>
+        </div>
         </div>
 
         <div className="pieGraph-one">
