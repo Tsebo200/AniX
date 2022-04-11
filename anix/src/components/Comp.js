@@ -126,7 +126,7 @@ return (
               ],
             }}
           />
-
+          <div className="doughnutGraph-containerTwo">
           <div className="doughnutGraph-two">
             <h1 className="table-heading" id="animeNameTwo">Anime Name</h1>
             <Doughnut
@@ -149,6 +149,7 @@ return (
               }}
             />
           </div>
+        </div>
         </div>
         </div>
 

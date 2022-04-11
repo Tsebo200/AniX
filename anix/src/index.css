@@ -218,9 +218,16 @@ a:hover{
 .poster{
   width: 305px;
   height: 420px;
+  overflow: auto;
   margin-left: 20px;
   float: left;
-  background-color: grey;
+}
+
+#Poster{
+  width: 305px;
+  height: 420px;
+  background-position: center;
+  background-size: cover;
 }
 
 .title{
@@ -248,7 +255,7 @@ a:hover{
   width: 300px;
   height: 30vh;
   color: #2F3542;
-  background-color: #c3d3e6;
+  /* background-color: #c3d3e6; */
   margin-top: 360px;
   margin-left: 70px;
   padding-top: 0.1%;
@@ -317,6 +324,19 @@ h2{
   border: 1px solid  black;
   float: left;
 }
+
+.doughnutGraph-containerTwo{
+  width: 300px;
+  height: 300px;
+  margin-left: 650px;
+  margin-top: -290px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2F3542;
+  border: 1px solid  black;
+  float: left;
+}
+
 .doughnutGraph-one{
   width: 250px;
   color: #2F3542;
@@ -330,19 +350,18 @@ h2{
 .doughnutGraph-two{
   width: 250px;
   color: #2F3542;
-  background-color: #c3d3e6;
-  margin-top: -280px;
-  margin-left: 700px;
+  /* background-color: #c3d3e6; */
+  margin-top: 10px;
+  margin-left: 25px;
   padding-top: 1%;
   float: left;
 }
-
 
 .pieGraph-one{
   width: 250px;
   height: 100px;
   color: #2F3542;
-  background-color: #c3d3e6;
+  /* background-color: #c3d3e6; */
   margin-top: 360px;
   margin-left: -250px;
   padding-top: 0.2%;
@@ -353,7 +372,7 @@ h2{
   width: 250px;
   height: 100px;
   color: #2F3542;
-  background-color: #c3d3e6;
+  /* background-color: #c3d3e6; */
   margin-top: -240px;
   margin-left: 850px;
   padding-top: 0.2%;
@@ -363,8 +382,20 @@ h2{
 .linegraph{
   width: 550px;
   color: #2F3542;
-  background-color: #c3d3e6;
+  /* background-color: #c3d3e6; */
   margin-left: 100px;
   padding-top: 4%;
+  float: left;
+}
+
+.barGraph-container{
+  width: 300px;
+  height: 300px;
+  margin-left: 650px;
+  margin-top: -290px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2F3542;
+  border: 1px solid  black;
   float: left;
 }

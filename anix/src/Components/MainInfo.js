@@ -10,7 +10,7 @@ axios.get("https://api.jikan.moe/v4/anime")
     let setImage = res.data.data[randomSelection].images.jpg.image_url;
     let setTitle = res.data.data[randomSelection].title;
     let setSynopsis = res.data.data[randomSelection].synopsis;
-    // document.getElementById("Poster").value = setImage;
+    document.getElementById("Poster").setAttribute("src",setImage);
     document.getElementById("titleText").textContent = setTitle;
     document.getElementById("synopsisText").textContent = setSynopsis;
     console.log(randomSelection);
@@ -40,7 +40,9 @@ const MainInfo =()=>{
             
         </div>
             <div className='mainInfo-container'>
-            <div id="Poster" className="poster"></div>
+            <div className="poster">
+                <img id="Poster"></img>
+            </div>
             <div id="titleText" className="title"></div>
             <div id="synopsisText" className="synopsis"></div>
             </div>
