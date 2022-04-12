@@ -46,6 +46,7 @@ const [userWatchingTwo, setUserWatchingTwo] = useState([]);
 const [userCompletedTwo, setUserCompletedTwo] = useState([]);
 const [userDroppedTwo, setUserDroppedTwo] = useState([]);
 const[userPlannedToWatchTwo, setUserPlannedToWatchTwo] = useState([]);
+
 const outputChosenAnime = () => { 
     let animeId = selectedAnime.current.value;
     let animeIdTwo = selectedAnimeTwo.current.value;
@@ -76,6 +77,8 @@ const outputChosenAnime = () => {
 
     });
   
+
+   
 
     // const [favTest, setFavTest] = useState([]);
     const pushedFavTest = [];
