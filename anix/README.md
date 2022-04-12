@@ -17,10 +17,10 @@
 <p align="center">
 
   <a href="https://github.com/Tsebo200/AniX">
-    <img src="../src/Assets/Logo\ 2.png" alt="../src/Assets/Hover\ Logo.png" width="140" height="140">
+    <img src="/src/Assets/Logo\ 2.png" alt="../src/Assets/Hover\ Logo.png" width="140" height="140">
   </a>
   
-  <h3 align="center">OpenSpace</h3>
+  <h3 align="center">AniX</h3>
 
   <p align="center">
     A react project using the Jikan Api to demonstrate data visualization using charts js  <br>
