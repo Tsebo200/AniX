@@ -17,18 +17,6 @@ const Comp = () => {
             let popularity = data.popularity;
             // setAnimePop(popularity);
             console.log(popularity);
-
-    //       let animePop = [];
-    //         for(let i = 0; i < data.length; i++){
-    //           // if(data[i].title_english.includes(chosenAnimeName)){
-              
-    //           // }
-    //           animePop.push({
-    //             name: data[i].title_english,
-    //             popularity: data[i].popularity,
-    //           });
-    //         }
-    //         console.log(animePop);
      });
 }, []);
 
@@ -48,19 +36,15 @@ const [userDroppedTwo, setUserDroppedTwo] = useState([]);
 const[userPlannedToWatchTwo, setUserPlannedToWatchTwo] = useState([]);
 const [favTest, setFavTest] = useState([]);
 const [favTest2, setFavTest2] = useState([]);
+const [animeLabelName, setAnimeLabelName] = useState([]);
+const [animeLabelNameTwo, setAnimeLabelNameTwo] = useState([]);
+const []
 
 const outputChosenAnime = () => { 
     let animeId = selectedAnime.current.value;
     let animeIdTwo = selectedAnimeTwo.current.value;
     let chosenAnimeName = animeList.filter(item => item.mal_id == animeId);
     let chosenAnimeNameTwo = animeList.filter(item => item.mal_id == animeIdTwo);
-
-            
-    
-
-    // const outputChosenAnimeTwo = () => { 
-    //     let animeId = selectedAnimeTwo.current.value;
-    //     let chosenAnimeName = animeListTwo.filter(item => item.mal_id == animeId);
   
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id+"/statistics")
     .then((res)=>{
@@ -83,23 +67,28 @@ const outputChosenAnime = () => {
     
 
     const pushedFavTest = [];
+    const pushedAnimeName = [];
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id)
     .then((res)=>{
      let data = res.data.data;
-     console.log(data);
       pushedFavTest.push(data.favorites);
-      console.log(pushedFavTest);
-      setFavTest(pushedFavTest, [])
+      pushedAnimeName.push(data.title);
+      setFavTest(pushedFavTest, []);
+      setAnimeLabelName(pushedAnimeName, []);
     });
 
     const pushedFavTest2 = [];
+    const pushedAnimeNameTwo = [];
+    const pushedMembersTwo = [];
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id)
     .then((res)=>{
      let data = res.data.data;
-     console.log(data);
       pushedFavTest2.push(data.favorites);
-      console.log(pushedFavTest2);
-      setFavTest2(pushedFavTest2, [])
+      pushedAnimeNameTwo.push(data.title);
+      pushedMembersTwo.push(data.members);
+      setFavTest2(pushedFavTest2, []);
+      setAnimeLabelNameTwo(pushedAnimeNameTwo, []);
+      setAnimeMembers(pushedMembersTwo);
     });
 
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id+"/statistics")
@@ -236,7 +225,7 @@ return (
           <h1 className="table-heading">Users Favourites</h1>
           <Bar
             data={{
-              labels: ["animeNameOne", "One Piece"],
+              labels: [animeLabelName, animeLabelNameTwo],
               datasets: [
                 {
                   label: "# of Favourites",
