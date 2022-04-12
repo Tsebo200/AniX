@@ -8,7 +8,8 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/AniX)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/AniX)
 ![Github Language](https://img.shields.io/github/languages/top/Tsebo200/AniX)
-![Github Quality Score](https://img.shields.io/ansible/quality/462884160)
+![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/AniX/total)
+![Github node Version](https://img.shields.io/node/v/anix)
 
 
 <!-- HEADER SECTION -->
