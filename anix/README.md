@@ -7,6 +7,8 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/AniX)
 ![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/AniX)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/AniX)
+![Github Language](https://img.shields.io/github/languages/top/Tsebo200/AniX)
+![Github Quality Score](https://img.shields.io/ansible/quality/462884160)
 
 
 <!-- HEADER SECTION -->
