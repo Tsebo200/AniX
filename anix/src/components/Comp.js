@@ -38,7 +38,9 @@ const [favTest, setFavTest] = useState([]);
 const [favTest2, setFavTest2] = useState([]);
 const [animeLabelName, setAnimeLabelName] = useState([]);
 const [animeLabelNameTwo, setAnimeLabelNameTwo] = useState([]);
-const []
+const [animeMembers, setAnimeMembers] = useState([]);
+const [animeMembersTwo, setAnimeMembersTwo] = useState([]);
+const [animePieLabel, setAnimePieLabel] = useState([]);
 
 const outputChosenAnime = () => { 
     let animeId = selectedAnime.current.value;
@@ -68,14 +70,18 @@ const outputChosenAnime = () => {
 
     const pushedFavTest = [];
     const pushedAnimeName = [];
+    const pushedAnimeMembers = [];
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id)
     .then((res)=>{
      let data = res.data.data;
       pushedFavTest.push(data.favorites);
       pushedAnimeName.push(data.title);
+      pushedAnimeMembers.push(data.members);
       setFavTest(pushedFavTest, []);
       setAnimeLabelName(pushedAnimeName, []);
+      setAnimeMembers(pushedAnimeMembers, []);
     });
+
 
     const pushedFavTest2 = [];
     const pushedAnimeNameTwo = [];
@@ -88,7 +94,7 @@ const outputChosenAnime = () => {
       pushedMembersTwo.push(data.members);
       setFavTest2(pushedFavTest2, []);
       setAnimeLabelNameTwo(pushedAnimeNameTwo, []);
-      setAnimeMembers(pushedMembersTwo);
+      setAnimeMembersTwo(pushedMembersTwo, []);
     });
 
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id+"/statistics")
@@ -202,7 +208,7 @@ return (
                     datasets: [
                       {
                         label: '# of Votes',
-                        data: [2,5,7,12],
+                        data: [animeMembers,animeMembersTwo],
                         backgroundColor: [
                           "#CED6E0",
                           "#FF4757",
