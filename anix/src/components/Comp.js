@@ -7,16 +7,12 @@ import {useState, useRef, useEffect} from 'react';
 
 const Comp = () => {
     const [animeList, setAnimeList] = useState([]);
-    const [animePop, setAnimePop] = useState([]);
     
     useEffect(()=>{ 
         axios.get("https://api.jikan.moe/v4/anime")
         .then((res) => {
             let data = res.data.data;
             setAnimeList(data);
-            let popularity = data.popularity;
-            // setAnimePop(popularity);
-            console.log(popularity);
      });
 }, []);
 
@@ -61,13 +57,7 @@ const outputChosenAnime = () => {
         setUserDroppedOne(droppedOne);
         let plannedOne = data.plan_to_watch;
         setUserPlannedToWatchOne(plannedOne);
-        
-      
-
     });
-  
-
-    
 
     const pushedFavTest = [];
     const pushedAnimeName = [];
@@ -108,7 +98,6 @@ const outputChosenAnime = () => {
     .then((res)=>{
         let data =res.data.data;
         console.log(data);
-
         let watchingTwo = data.watching;
         setUserWatchingTwo(watchingTwo);
         let completedTwo = data.completed;
