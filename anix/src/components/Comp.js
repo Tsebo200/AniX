@@ -47,6 +47,7 @@ const [userCompletedTwo, setUserCompletedTwo] = useState([]);
 const [userDroppedTwo, setUserDroppedTwo] = useState([]);
 const[userPlannedToWatchTwo, setUserPlannedToWatchTwo] = useState([]);
 const [favTest, setFavTest] = useState([]);
+const [favTest2, setFavTest2] = useState([]);
 
 const outputChosenAnime = () => { 
     let animeId = selectedAnime.current.value;
@@ -91,6 +92,16 @@ const outputChosenAnime = () => {
       setFavTest(pushedFavTest, [])
     });
 
+    const pushedFavTest2 = [];
+    axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id)
+    .then((res)=>{
+     let data = res.data.data;
+     console.log(data);
+      pushedFavTest2.push(data.favorites);
+      console.log(pushedFavTest2);
+      setFavTest2(pushedFavTest2, [])
+    });
+
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id+"/statistics")
     .then((res)=>{
         let data =res.data.data;
@@ -106,6 +117,7 @@ const outputChosenAnime = () => {
         setUserPlannedToWatchTwo(plannedTwo);
 
     });
+
     setAnimeNameOne(chosenAnimeName);
     document.getElementById("animeNameOne").textContent = chosenAnimeName[0].title;
     console.log(chosenAnimeName);
@@ -228,7 +240,7 @@ return (
               datasets: [
                 {
                   label: "# of Favourites",
-                  data: [favTest],
+                  data: [favTest, favTest2],
                   backgroundColor: [
                     "#CED6E0",
                     "#FF4757",
