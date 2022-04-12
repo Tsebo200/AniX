@@ -41,7 +41,7 @@ const MainInfo =()=>{
         </div>
             <div className='mainInfo-container'>
             <div className="poster">
-                <img id="Poster"></img>
+                <img src="" id="Poster"></img>
             </div>
             <div id="titleText" className="title"></div>
             <div id="synopsisText" className="synopsis"></div>

@@ -7,14 +7,29 @@ import {useState, useRef, useEffect} from 'react';
 
 const Comp = () => {
     const [animeList, setAnimeList] = useState([]);
+    const [animePop, setAnimePop] = useState([]);
     
     useEffect(()=>{ 
         axios.get("https://api.jikan.moe/v4/anime")
         .then((res) => {
             let data = res.data.data;
             setAnimeList(data);
-            console.log(data);
-    });
+            let popularity = data.popularity;
+            // setAnimePop(popularity);
+            console.log(popularity);
+
+    //       let animePop = [];
+    //         for(let i = 0; i < data.length; i++){
+    //           // if(data[i].title_english.includes(chosenAnimeName)){
+              
+    //           // }
+    //           animePop.push({
+    //             name: data[i].title_english,
+    //             popularity: data[i].popularity,
+    //           });
+    //         }
+    //         console.log(animePop);
+     });
 }, []);
 
 
@@ -37,13 +52,16 @@ const outputChosenAnime = () => {
     let chosenAnimeName = animeList.filter(item => item.mal_id == animeId);
     let chosenAnimeNameTwo = animeList.filter(item => item.mal_id == animeIdTwo);
 
+            
+    
+
     // const outputChosenAnimeTwo = () => { 
     //     let animeId = selectedAnimeTwo.current.value;
     //     let chosenAnimeName = animeListTwo.filter(item => item.mal_id == animeId);
-    
+  
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id+"/statistics")
     .then((res)=>{
-        let data =res.data.data;
+        let data = res.data.data;
         console.log(data);
         let watchingOne = data.watching;
         setUserWatchingOne(watchingOne);
@@ -53,8 +71,23 @@ const outputChosenAnime = () => {
         setUserDroppedOne(droppedOne);
         let plannedOne = data.plan_to_watch;
         setUserPlannedToWatchOne(plannedOne);
+        
+      
 
     });
+  
+
+    // const [favTest, setFavTest] = useState([]);
+    const pushedFavTest = [];
+    axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id)
+    .then((res)=>{
+     let data = res.data.data;
+     console.log(data);
+      pushedFavTest.push(data.favorites);
+      console.log(pushedFavTest);
+      // setFavTest(pushedFavTest, [])
+    });
+
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id+"/statistics")
     .then((res)=>{
         let data =res.data.data;
@@ -126,6 +159,7 @@ return (
               ],
             }}
           />
+
           <div className="doughnutGraph-containerTwo">
           <div className="doughnutGraph-two">
             <h1 className="table-heading" id="animeNameTwo">Anime Name</h1>
@@ -153,8 +187,10 @@ return (
         </div>
         </div>
 
+
+        <div className="pieGraph-container">
         <div className="pieGraph-one">
-          <h1 className="table-heading">Users Favourites</h1>
+          <h1 className="table-heading">Number of Members</h1>
           <Pie
             data={
                 {
@@ -162,7 +198,7 @@ return (
                     datasets: [
                       {
                         label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
+                        data: [2,5,7,12],
                         backgroundColor: [
                           'rgba(255, 99, 132, 0.2)',
                           'rgba(54, 162, 235, 0.2)',
@@ -186,16 +222,19 @@ return (
             }
           />
         </div>
+        </div>
 
+
+        <div className="barGraph-container">
         <div className="barGraph">
           <h1 className="table-heading">Users Favourites</h1>
           <Bar
             data={{
-              labels: ["Naruto", "One Piece"],
+              labels: ["animeNameOne", "One Piece"],
               datasets: [
                 {
                   label: "# of Favourites",
-                  data: [12, 19],
+                  data: [],
                   backgroundColor: [
                     "#CED6E0",
                     "#FF4757",
@@ -214,6 +253,7 @@ return (
             width={600}
             options={{ maintainAspectRatio: false }}
           />
+        </div>
         </div>
 
         <div className="pieGraph-two">
