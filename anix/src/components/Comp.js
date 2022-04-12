@@ -46,6 +46,7 @@ const [userWatchingTwo, setUserWatchingTwo] = useState([]);
 const [userCompletedTwo, setUserCompletedTwo] = useState([]);
 const [userDroppedTwo, setUserDroppedTwo] = useState([]);
 const[userPlannedToWatchTwo, setUserPlannedToWatchTwo] = useState([]);
+const [favTest, setFavTest] = useState([]);
 
 const outputChosenAnime = () => { 
     let animeId = selectedAnime.current.value;
@@ -78,9 +79,8 @@ const outputChosenAnime = () => {
     });
   
 
-   
+    
 
-    // const [favTest, setFavTest] = useState([]);
     const pushedFavTest = [];
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id)
     .then((res)=>{
@@ -88,7 +88,7 @@ const outputChosenAnime = () => {
      console.log(data);
       pushedFavTest.push(data.favorites);
       console.log(pushedFavTest);
-      // setFavTest(pushedFavTest, [])
+      setFavTest(pushedFavTest, [])
     });
 
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeNameTwo[0].mal_id+"/statistics")
@@ -228,7 +228,7 @@ return (
               datasets: [
                 {
                   label: "# of Favourites",
-                  data: [],
+                  data: [favTest],
                   backgroundColor: [
                     "#CED6E0",
                     "#FF4757",
