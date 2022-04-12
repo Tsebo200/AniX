@@ -71,15 +71,18 @@ const outputChosenAnime = () => {
     const pushedFavTest = [];
     const pushedAnimeName = [];
     const pushedAnimeMembers = [];
+    const pushedAnimeLabel = [];
     axios.get("https://api.jikan.moe/v4/anime/"+chosenAnimeName[0].mal_id)
     .then((res)=>{
      let data = res.data.data;
       pushedFavTest.push(data.favorites);
       pushedAnimeName.push(data.title);
       pushedAnimeMembers.push(data.members);
+      pushedAnimeLabel.push(data.title);
       setFavTest(pushedFavTest, []);
       setAnimeLabelName(pushedAnimeName, []);
       setAnimeMembers(pushedAnimeMembers, []);
+      setAnimePieLabel(pushedAnimeLabel, []);
     });
 
 
@@ -204,7 +207,7 @@ return (
           <Pie
             data={
                 {
-                    labels: ['Naruto','One Piece'],
+                    labels: [animePieLabel,"One Piece"],
                     datasets: [
                       {
                         label: '# of Votes',
