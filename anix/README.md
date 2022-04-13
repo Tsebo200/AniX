@@ -20,7 +20,7 @@
 <p align="center">
 
   <a href="https://github.com/Tsebo200/AniX">
-    <img src="../src/Assets/Logo\ 2.png" alt="src/Assets/Hover\ Logo.png" width="140" height="140">
+    <img src="../src/Assets/Logo\ 2.png" alt="../src/Assets/Logo\ 2.png" width="140" height="140">
   </a>
   
   <h3 align="center">AniX</h3>
@@ -30,7 +30,7 @@
     
    <br />
    <br />
-   <a href="path/to/demonstration/video">View Demo</a>
+   <a href="https://drive.google.com/file/d/1BT_I1xlJTMef2u1XfV93AzrsM9vlIC_y/view?usp=sharing">View Demo</a>
     ·
     <a href="https://github.com/Tsebo200/AniX/issues">Report Bug</a>
     ·
@@ -80,7 +80,7 @@ My Project is about the comparison of animes data in charts js. It is a solution
 
 
 <!-- GETTING STARTED -->
-<!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
+<!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own machines -->
 ## Getting Started
 
 The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -152,11 +152,11 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Wireframes
 
-![image7][image]
+![image7](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/Assets/ReadMe/Wires.jpg)
 
 ### Custom UI
 
-![image8][image8]
+![image8](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/Assets/ReadMe/Custom\UI.jpg)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -203,7 +203,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][image9]
+![image9](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/Assets/ReadMe/MockUps.jpg)
 <br>
 ![image10][image10]
 
@@ -212,7 +212,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://drive.google.com/file/d/1eUNqAr9TJ-ScsZEJzURRuIjhyxq4sL8S/view?usp=sharing)
 
 
 See the [open issues](https://github.com/Tsebo200/AniX/issues) for a list of proposed features (and known issues).
@@ -234,12 +234,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * **Project Link** - https://github.com/Tsebo200/AniX
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+
 <!-- all resources that you used and Acknowledgements here -->
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
+
 
 
