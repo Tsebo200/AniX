@@ -205,7 +205,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ![image9](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/Assets/ReadMe/MockUps.jpg)
 <br>
-![image10][image10]
+
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
