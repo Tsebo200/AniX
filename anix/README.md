@@ -9,7 +9,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/AniX)
 ![Github Language](https://img.shields.io/github/languages/top/Tsebo200/AniX)
 ![Github Downloads](https://img.shields.io/github/downloads/Tsebo200/AniX/total)
-![Github node Version](https://img.shields.io/node/v/anix)
+<!-- ![Github node Version](https://img.shields.io/node/v/anix) -->
 
 
 <!-- HEADER SECTION -->
@@ -26,7 +26,7 @@
   <h3 align="center">AniX</h3>
 
   <p align="center">
-    A react project using the Jikan Api to demonstrate data visualization using charts js  <br>
+    A react project using the Jikan Api to demonstrate data visualisation using charts js  <br>
     
    <br />
    <br />
@@ -71,13 +71,13 @@
 
 ### Project Description
 
-A nice introduction to this amazing project of mine.
+My Project is about the comparison of animes data in charts js. It is a solution for weebs that are unable to find data comparison about Anime.
 
 ### Built With
 
 * [React](https://reactjs.org/)
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
+* [Charts JS](https://www.chartjs.org/)
+
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -87,7 +87,7 @@ The following instructions will get you a copy of the project up and running on 
 
 ### Prerequisites
 
-Ensure that you have the latest version of [NPM](https://www.npmjs.com/) installed on your machine. The [GitHub Desktop](https://desktop.github.com/) program will also be required.
+Ensure that you have the latest version of [NPM](https://www.npmjs.com/) installed on your machine. The [GitHub Desktop](https://desktop.github.com/) program will also be required. You will also need a typeface called Avenir on your local machine for the best experience.
 
 ### How to install
 
@@ -120,19 +120,19 @@ Run the following in the command-line to install all the required dependencies:
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 ![image2](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/assets/mockup.jpg)
 
-### All The Latest Space X Data! 
+### All The Latest Anime Data! 
 
-Usding the Space X API, we have collected and collated all the most relevant Space X data into once seemless react experience!
+Using the Jikan API, we have collected and collated all the most relevant Anime data into once seemless react experience!
 
 ![image3][image3]
 ### Feature 2
 
-Description of Feature
+This dropdown dynamically loads the data of the selected anime in the charts.
 
 ![image4][image4]
 ### Feature 3
 
-Description of Feature
+The functionality of the information pills and anime poster updates randomly every session. 
 
 ![image5][image5]
 
@@ -142,11 +142,11 @@ Description of Feature
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 ## Concept Process
 
-The `Conceptual Process` is the set of actions, activities and research that was done when starting this project.
+The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. As part of my conceptual process I have sketched wireframes in Figma, I looked at Pinterest for inspiration. I planned out the data structure for my project in a word processor.
 
 ### Ideation
 
-![image5][image5]
+![image5][../src/Assets/ReadMe/Anime\ Poster\ &\ Info\ Pills.jpg]
 <br>
 ![image6][image6]
 
