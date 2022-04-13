@@ -20,7 +20,7 @@
 <p align="center">
 
   <a href="https://github.com/Tsebo200/AniX">
-    <img src="src/Assets/Logo\ 2.png" alt="src/Assets/Hover\ Logo.png" width="140" height="140">
+    <img src="../src/Assets/Logo\ 2.png" alt="src/Assets/Hover\ Logo.png" width="140" height="140">
   </a>
   
   <h3 align="center">AniX</h3>
@@ -122,7 +122,7 @@ Run the following in the command-line to install all the required dependencies:
 
 ### All The Latest Anime Data! 
 
-Using the Jikan API, we have collected and collated all the most relevant Anime data into once seemless react experience!
+Using the Jikan API, I have collected and collated all the most relevant Anime data into once seemless react experience!
 
 ![image3][image3]
 ### Feature 1
@@ -188,14 +188,15 @@ In my backend I utilised React js including the react hooks such as useState, us
 
 What aspects of this final build contribute to the `Above And Beyond` Component of your brief?
 <!-- what did you learn outside of the classroom and implement into your project-->
-* Name of Skill Explored.
-* Explain your understanding and execution of above skill.
+* Debugging
+* Debugging is the process in which a developer fixes the bug (issue) that is in the code in order to make the website/application work as intended.
+* I installed a plugin called React Developer Tool, it adds React code in my console from the Browser Router to the components on that page.
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* Future 1.
-* Future 2.
+* I should have been able to push the data from my API into the line graph, thus I will find a way to do so.
+* I will work better at my frontend to make it more pleasing.
 
 <!-- MOCKUPS -->
 ## Final Outcome
@@ -219,7 +220,7 @@ See the [open issues](https://github.com/Tsebo200/AniX/issues) for a list of pro
 <!-- AUTHORS -->
 ## Authors
 
-* **Your Name & Surname** - [Tsebo200](https://github.com/Tsebo200)
+* **Tsebo Ramonyalioa** - [Tsebo200](https://github.com/Tsebo200)
 
 <!-- LICENSE -->
 ## License
@@ -229,7 +230,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Your Name & Surname** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
+* **Tsebo Ramonyalioa** - [email@address](mailto:200200@virtualwidnow.co.za) - [@instagram_handle](https://www.instagram.com/inspiration200200/) 
 * **Project Link** - https://github.com/Tsebo200/AniX
 
 <!-- ACKNOWLEDGEMENTS -->
