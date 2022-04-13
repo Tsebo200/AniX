@@ -118,7 +118,7 @@ Run the following in the command-line to install all the required dependencies:
 ## Features and Functionality
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/assets/mockup.jpg)
+![image2](https://raw.githubusercontent.com/Tsebo200/AniX/src/assets/mockup.jpg)
 
 ### All The Latest Anime Data! 
 
@@ -176,13 +176,12 @@ In my backend I utilised React js including the react hooks such as useState, us
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
-* What was good about this project, what did you learn.
-* What aspects did you enjoy.
+* I enjoyed this brief as it forces you to be  creative in presenting your data with charts js. I learnt about React and React hooks. 
+* I mostly enjoyed the API implementation with Charts js, I found it satisfying when the data was loading through the charts.
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* Bugs.
-* Bugs.
+* When the anime shows the an anime movie in the home page, the API does not have information about the year and the season it was released (this leaving the last two info pills empty), thus, I would make an if statement that removes the last two pills if an anime movie loads. 
 
 
 #### Above And Beyond
