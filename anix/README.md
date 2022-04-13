@@ -156,7 +156,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Custom UI
 
-![image8](https://raw.githubusercontent.com/Tsebo200/AniX/main/src/Assets/ReadMe/Custom\UI.jpg)
+![image8](https://raw.githubusercontent.com/Tsebo200/AniX/tree/main/src/Assets/ReadMe/Custom\UI.jpg)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
