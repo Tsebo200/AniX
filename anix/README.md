@@ -65,9 +65,7 @@
 * [Acknowledgements](#acknowledgements)
 
 <!--PROJECT DESCRIPTION-->
-## About the Project
-<!-- header image of project -->
-![image1][image1]
+
 
 ### Project Description
 
