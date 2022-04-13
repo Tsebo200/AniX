@@ -125,12 +125,12 @@ Run the following in the command-line to install all the required dependencies:
 Using the Jikan API, we have collected and collated all the most relevant Anime data into once seemless react experience!
 
 ![image3][image3]
-### Feature 2
+### Feature 1
 
 This dropdown dynamically loads the data of the selected anime in the charts.
 
 ![image4][image4]
-### Feature 3
+### Feature 2
 
 The functionality of the information pills and anime poster updates randomly every session. 
 
@@ -152,7 +152,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Wireframes
 
-![image7][image7]
+![image7][image]
 
 ### Custom UI
 
@@ -161,7 +161,9 @@ The `Conceptual Process` is the set of actions, activities and research that was
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
 
-The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
+The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application. 
+In my frontend I implemented a Google Font called Nunito, a box shadow on my info pills (in Home Page) as well as my graph containers (in the comparison page), I added Hover States for my info pills, my navigational buttons and my logo.
+In my backend I utilised React js including the react hooks such as useState, useRef and useEffect. I used the useEffect to retrieve all the anime when the page renders, useRef was used to store a variable (the selectedAnime) and the useState was used to change the anime name when it was selected in the dropdown. I utilised axios to make an HTTP request for my API (this allows me to fetch data from the API easily). I implemented charts js to create dynamic charts.
 
 ### Implementation Process
 <!-- stipulate all of the functionality you included in the project -->
@@ -169,9 +171,8 @@ The `Development Process` is the technical implementations and functionality don
 
 * Utilized React `Charts.JS` dependency for Data visualization
 * Implemented Routing with `React-Router v6`.
-* API End Point: link Here 
-* `Plugin` for this.
-* ETC.
+* API End Point: https://api.jikan.moe/v4/anime.
+* Used React Hooks to write less code
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
