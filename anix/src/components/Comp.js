@@ -209,7 +209,7 @@ return (
                         label: '# of Votes',
                         data: [animeMembers,animeMembersTwo],
                         backgroundColor: [
-                          "#CED6E0",
+                          "#FF6B81",
                           "#FF4757",
                         ],
                         borderColor: 'rgb(195, 211, 230)',
