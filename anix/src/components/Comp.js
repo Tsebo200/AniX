@@ -161,8 +161,9 @@ return (
                   label: "# of Votes",
                   data: [userWatchingOne, userCompletedOne, userDroppedOne, userPlannedToWatchOne],
                   backgroundColor: ["#CED6E0", "#FF4757", "#7D8897", "#FF6B81"],
-                  borderColor: [],
-                  borderWidth: 1,
+                  // borderColor: 'rgba(195, 211, 230, 0.05)',
+                  borderColor: 'rgb(195, 211, 230)',
+                  borderWidth: 0.2,
                 },
               ],
             }}
@@ -185,7 +186,7 @@ return (
                       "#FF6B81",
                     ],
                     borderColor: [],
-                    borderWidth: 1,
+                    borderWidth: 0.1,
                   },
                 ],
               }}
@@ -214,7 +215,7 @@ return (
                         borderColor: [
                           
                         ],
-                        borderWidth: 1,
+                        borderWidth: 0.1,
                       },
                     ],
                   }
@@ -244,7 +245,7 @@ return (
                   ],
                   borderColor: [],
                   Color: ["#ffa502"],
-                  borderWidth: "none",
+                  borderWidth: 0.1,
                 },
               ],
             }}
