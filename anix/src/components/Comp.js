@@ -185,8 +185,8 @@ return (
                       "#7D8897",
                       "#FF6B81",
                     ],
-                    borderColor: [],
-                    borderWidth: 0.1,
+                    borderColor: 'rgb(195, 211, 230)',
+                    borderWidth: 0.2,
                   },
                 ],
               }}
@@ -212,10 +212,8 @@ return (
                           "#CED6E0",
                           "#FF4757",
                         ],
-                        borderColor: [
-                          
-                        ],
-                        borderWidth: 0.1,
+                        borderColor: 'rgb(195, 211, 230)',
+                        borderWidth: 0.2,
                       },
                     ],
                   }
@@ -236,22 +234,37 @@ return (
                   label: "# of Favourites",
                   data: [favTest, favTest2],
                   backgroundColor: [
-                    "#CED6E0",
+                    "#FF6B81",
                     "#FF4757",
                     "#A4B0BE",
                     "#FF6B81",
                     "#7D8897",
                     "#FFA1A9",
                   ],
-                  borderColor: [],
-                  Color: ["#ffa502"],
-                  borderWidth: 0.1,
+                  Color: "#ffa502",
+                  borderColor: 'rgb(195, 211, 230)',
+                  borderWidth: 0.2,
                 },
               ],
             }}
             height={400}
             width={600}
             options={{ maintainAspectRatio: false }}
+            // options={
+            //   {scales: {
+            //     x: {
+            //       gridLines: {
+            //           // display:false
+            //           color: "rgb(255,255,255)",
+            //       }
+            //     },
+            //     y: { gridLines: {
+            //       // display:false
+            //           color: "rgb(255,255,255)",
+            //   }   
+            //     }
+            // }}
+            // }
           />
         </div>
         </div>
