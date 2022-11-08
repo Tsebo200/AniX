@@ -76,10 +76,10 @@ const Time = () => {
               labels: ["Started", "Ended"],
               datasets: [
                 {
-                  label: "# of Votes",
+                  label: "Release Time",
                   data: [animeAiring],
                   backgroundColor: ["#CED6E0","#FF4757",],
-                  borderColor: [],
+                  borderColor: "#FFFFFF",
                   borderWidth: 1,
                 },
               ],
