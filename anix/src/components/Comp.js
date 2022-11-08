@@ -1,3 +1,5 @@
+// import './index.scss';
+// import '../components/index.scss'
 import "chart.js/auto";
 import React from "react";
 import axios from "axios";
